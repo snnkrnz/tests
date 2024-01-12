@@ -1,0 +1,79 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.panel-container {
+  display: flex;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.left-panel {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding-top: 50px;
+}
+
+.right-panel {
+  width: 90%;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 15px 0 15px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+.profile-table-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-table-container table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.profile-table-container th, .profile-table-container td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#kayitform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#kayitform label{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#kayitform button{
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+#kayitform input{
+  width: 50%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 5px;
+}

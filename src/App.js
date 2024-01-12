@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Panel from './Test/Panel';
+import Kayit from './Test/Kayit';
+import MusteriSiparisInput from './Test/MusteriSiparisInput';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Panel />} />
+        <Route path="/kayit" element={<Kayit />} />
+        <Route exact path="/urun-getir" element={<MusteriSiparisInput />} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
